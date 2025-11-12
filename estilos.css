@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('imagenes/fondo_index.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contenedor {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  transform: translate(-20%, -40%);
+}
+
+.titulo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 90px;
+  line-height: 0.9; /* ajusta el espacio entre líneas */
+  margin: 0;
+}
+
+.btn {
+  background-color: #e65411; /* color de fondo */
+  color: white;              /* color del texto */
+  padding: 12px 24px;        /* espacio interno */
+  border: none;              /* sin borde */
+  border-radius: 8px;        /* bordes redondeados */
+  font-size: 16px;           /* tamaño del texto */
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;           /* cambia el cursor */
+  transition: all 0.3s ease; /* animación suave */
+
+}
+/* Efecto al pasar el mouse */
+.btn:hover {
+   background-color: #f58e4a;
+    transform: scale(1.05); /* crece un poco */
+   box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* sombra más intensa */
+}
+
+.uno {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
