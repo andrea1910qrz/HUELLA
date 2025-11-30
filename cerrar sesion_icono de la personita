@@ -1,0 +1,81 @@
+//copia este, borra el que tienes y pon este, va antes de cerrar el /header
+//
+
+<!-- Navbar principal -->
+      <header class="navbar">
+     <div class="logo">
+        <a href="Index.html" class="imagen-link">
+        <img src="imagenes/logo.png" alt="Logo Huella"></a>
+     </div>
+     <nav class="nav-links">
+      <a href="#">Catalogo</a>
+      <a href="#">Sobre Nosotros</a>
+     </nav>
+     <div class="icons">
+
+    <div class="usuario-container">
+        <i class="ri-user-line" id="userIcon"></i>
+
+        <div class="menu-usuario" id="menuUsuario">
+            <a href="Iniarsesion.html">Cerrar sesión</a>
+        </div>
+    </div>
+
+    <i class="ri-shopping-bag-line"></i>
+
+    </div>
+
+//estos van dentro del style
+.usuario-container {
+            position: relative;
+            display: inline-block;
+            }
+
+            /* Menú que aparece al hacer clic */
+            .menu-usuario {
+            display: none;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            background: #ffffff;
+            color: black;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            padding: 8px 0;
+            min-width: 120px;
+            text-align: left;
+            z-index: 999;
+            }
+
+            /* Estilo del link dentro del menú */
+            .menu-usuario a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-family:'Inter', sans-serif;
+            color: #333;
+            transition: .2s;
+            }
+
+            .menu-usuario a:hover {
+            background-color: #e65411;
+            color: white;
+            }
+
+//este va despues de cerrar el /header y antes de cerrar el /body
+<script>
+    document.getElementById("userIcon").addEventListener("click", function(){
+    let menu = document.getElementById("menuUsuario");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    });
+
+    // Cierra el menú si haces clic fuera de él
+    document.addEventListener("click", function(e){
+    let menu = document.getElementById("menuUsuario");
+    let icon = document.getElementById("userIcon");
+
+    if(!icon.contains(e.target) && !menu.contains(e.target)){
+        menu.style.display = "none";
+    }
+    });
+    </script>
