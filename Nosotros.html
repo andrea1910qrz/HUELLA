@@ -2,6 +2,7 @@
 <HTML Lang = "es">
     <head>
         <Meta charset = "UTF-8">
+            <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
            <Meta name = "Viewport" Content = "Width = devicewidth, initial-scale = 1.0"> 
            <title> Sobre nosotros </title>
         
@@ -13,189 +14,115 @@
             position: relative; /* necesario para que "absolute" funcione dentro del body */
             } 
 
-             .titulo {
+             .historia {
             font-family: 'Inter', sans-serif;
-            font-size: 30px;
-            color: rgb(209, 122, 8);
-            font-weight: 300; /* para que se vea mas delgadita la letra*/
-             margin-top: 100px;
-             margin-left: 30px;
+            font-size: 15px;
+            Color:rgb(77, 52, 24);
+            position: absolute;
+            top: 470px;
+            left: 70px;
+            width: 350px;
+            text-align: justify;
+            
             }
 
-            .texto{
+            .contacto{
             font-family:'Inter', sans-serif; 
             font-size:15px; 
             Color:rgb(77, 52, 24);  
             position: absolute;
-            }
-
-            .subtitulo{
-            font-family:'Inter', sans-serif; 
-            font-size:25px; 
-            Color:rgb(209, 122, 8);  
-            position: absolute;
+            top: 150px;
+            left:420px;
+            text-align: justify;
             }
           
-            .top-bar { /*BARRA NAVEGADORA*/
-            background-color: #b05216;
-            color: #fff;
-            text-align: center;
-            padding: 6px 0;
-            font-size: 14px;
-            letter-spacing: 0.5px;
-            font-family: 'Inter', sans-serif;
-            }
-
-            /* Navbar */
-            .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-  
-            background: linear-gradient(90deg, #e88d66af, #f2b37cb9);
-            backdrop-filter: blur(6px);
-            box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            height: 85px;
-            padding: 0 60px; /* solo a los lados */
-            }
-
-            /* Logo */
-            .logo img {
-            width: auto !important;
-            height: 55px !important;
-            object-fit: contain;
-            display: block;
-            position: absolute;
-            top: 20%;
-            left: 5%;
-            }
-
-            /* Enlaces */
-            .nav-links {
-            display: flex;
-            gap: 25px;
-            }
-
-            .nav-links a {
-            text-decoration: none;
-            color: #eee9e9;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            font-family: 'Inter', sans-serif;
-            margin: 0 12px;
-            letter-spacing: 0.5px;
-            }
-
-            .nav-links a:hover {
-            color: #e65411; /* tono rosado elegante */
-            transform: scale(1.5); /* crece un poco */
-            box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* sombra más intensa */
-            }
-
-            /* Íconos */
-            .icons i {
-            font-size: 22px;
-            color: #ededed;
-            margin-left: 20px;
-            cursor: pointer;
-            transition: color 0.3s;
-            }
-
-            .icons i:hover {
-            color: #e65411;
-            transform: scale(1.9); /* crece un poco */
-            box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* sombra más intensa */
-            }
-
-            /* Sección de bienvenida */
-            .hero {
-            text-align: center;
-            padding: 120px 20px;
-            color: #fff;
-            }
-
-            .hero h1 {
-            font-size: 40px;
-            font-weight: 600;
-            backdrop-filter: brightness(0.8);
-            }
-
-            .imagen-link:hover {
-            transform: scale(1.05); /* agranda un poco */
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* sombra */
-            }
-
         </style>
 
     </head>
 
     <body>  
-    <h1 class="titulo">Sobre nosotros...</h1>
+        <link rel="stylesheet" href="estilos.css">
+     
+    
 
     <img src="Imagenes/contacto.jpg"  alt="foto de contacto, persona con un telefono"
-       style="width: 250px; top: 70px; left: 30px; position: absolute;">
+       style="width: 350px; top: 130px; left: 50px; position: absolute;">
 
     <!-- contacto -->
-    <p class="texto" style="top: 70px;  left: 300px;"> Correo electrónico: </p>
-    <p class="texto" style="top: 90px;  left: 300px;"> huellazapatos@gmail.com </p>
-    <p class="texto" style="top: 120px; left: 300px;">WhatsApp: 8110499691 </p>
-    <p class="texto" style="top: 150px; left: 300px; ">Dirección física:</p>
-        <p class="texto" style="top: 170px; left: 300px; ">Apodaca,Nuevo León zapatitos #1989</p>
-    <p class="texto" style="top: 200px; left: 300px; ">Horarios de atención:</p>
-        <p class="texto" style="top: 220px; left: 300px; "> Lunes a viernes de 7am a 10pm</p>
-    <p class="texto" style="top: 240px; left: 300px; ">Sabados y Domingos de 10am a 7pm</p>
 
-    <p class="subtitulo" style="top: 320px; left: 30px;">Historia </p>
-    <p class="texto" style="top: 360px; left: 30px; width: 270px; ">
-    Nosotros somos Huella, una marca de zapatos creada por dos amigas que tenían un sueño y un gusto similar por el calzado.
-    Creemos que los zapatos son una parte esencial para sentirte bien cada día; unos zapatos cómodos, con estilo y calidad 
-    pueden cambiar tu ánimo y acompañarte en cada paso de tu vida.
-    Por eso nació Huella: para ofrecer diseños que no solo se vean bonitos, sino que también te hagan sentir segura, cómoda y auténtica.
-    Cada par está pensado con dedicación, cariño y la ilusión con la que comenzó esta amistad y este proyecto.</p>
+    <div class="contacto">
+        <p>Contacto</p>
+        <p> ✉ Correo electronico: Huella@gmail.com</p>
+        <p> 📞 Whatsapp: 8125934864</p>
+       <p> 📍 Dirección física: Nuevo León, Apodaca Centro #234</p>
+       <p> ⏰ Horarios de atención: </p>
+       <p>Lunes a Viernes de 8:00 a.m-10:00 p.m</p>
+       <p>Sábados y Domingos de 10:00 a.m-7:00 p.m</p>
+    </div> 
+
+    
 
     <img src="Imagenes\Historia.jpg"  alt="foto de historia"
-       style="width: 270px; top: 330px; left: 350px; position: absolute;">
+       style="width: 380px; top: 490px; left: 440px; position: absolute;">
+       <div class="historia">
+        <p> Historia </p>
+        <p>Nosotras somos Huella, una marca de calzado nacida del sueño compartido de dos amigas que encontraron en su pasión por los zapatos una forma de crear algo significativo. Desde el inicio, comprendimos que un par de zapatos no es solo un accesorio: es una pieza esencial que influye en cómo te sientes, en cómo caminas y en la seguridad con la que afrontas cada día.
 
-    <video src="Imagenes\video_sobrenosotros.mp4" autoplay muted loop width="500" 
-    style="position: absolute; top: 50px; left: 750px;"> </video>
+Creemos firmemente que unos zapatos cómodos, estilizados y de calidad pueden transformar tu estado de ánimo y acompañarte en todos los momentos importantes de tu vida. Bajo esa convicción nació Huella: un proyecto creado para ofrecer diseños que no solo luzcan hermosos, sino que también te envuelvan en confort, te hagan sentir auténtica y reflejen tu personalidad en cada paso.
 
-    <p class="subtitulo" style="top: 680px; left: 30px;">Creadoras de la marca </p>
+Cada par es elaborado con dedicación, cuidado y el cariño que dio origen a esta amistad y a este sueño. En Huella, buscamos que cada diseño deje una marca especial en tu vida, la misma que nos inspiró a convertir una ilusión en una marca que camina contigo.
+</p>
+       </div>
+
+    <video src="Imagenes\video_sobrenosotros.mp4" autoplay muted loop width="600"
+    style="position: absolute; top: 0px; left: 900px;"> </video>
+
+   
+
+
     
-    <img src="Imagenes\virys.jpg"  alt="foto de viry"
-       style="width: 110px; height: 130px; top: 750px; left: 30px; position: absolute;">
-       <p class="texto" style="top: 750px;  left: 150px;"> Andrea </p>
-       <p class="texto" style="top: 770px;  left: 150px;"> Viridiana </p>
-       <p class="texto" style="top: 790px;  left: 150px;"> Avalos </p>
-       <p class="texto" style="top: 810px;  left: 150px;"> Quiroz </p>
-
-    <img src="Imagenes\mena.jpg"  alt="foto de mena"
-    style="width: 110px; height: 130px; top: 750px; left: 270px; position: absolute;">
-       <p class="texto" style="top: 750px;  left: 400px;"> Ximena </p>
-       <p class="texto" style="top: 770px;  left: 400px;"> Huerta </p>
-       <p class="texto" style="top: 790px;  left: 400px;"> Reta </p>
-
-    <img src="Imagenes\logo.png"  alt="foto del logo"
-    style="width: 150px; top: 730px; left: 500px; position: absolute;">
-
-
-    <!-- Navbar principal -->
+   
+<!-- Navbar principal -->
       <header class="navbar">
      <div class="logo">
-        <a href="Index.html" class="imagen-link">
+        <a href="index.html" class="imagen-link">
         <img src="imagenes/logo.png" alt="Logo Huella"></a>
      </div>
      <nav class="nav-links">
-      <a href="#">Catalogo</a>
-      <a href="#">Sobre Nosotros</a>
+      <a href="catalogo.php">Catalogo</a>
+      <a href="Nosotros.html">Sobre Nosotros</a>
      </nav>
+     
      <div class="icons">
-      <i class="ri-user-line"></i>
-      <i class="ri-shopping-bag-line"></i>
-     </div>
-     </header>
-    </body>
+
+    <div class="usuario-container">
+        <i class="ri-user-line" id="userIcon"></i>
+
+        <div class="menu-usuario" id="menuUsuario">
+            <a href="iniciar_sesion.html">Cerrar sesión</a>
+        </div>
+    </div>
+    <a href="carrito.php">
+    <i class="ri-shopping-bag-line"></i> </a>
+    </div>
+   
+
+    <script>
+    document.getElementById("userIcon").addEventListener("click", function(){
+    let menu = document.getElementById("menuUsuario");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    });
+
+    // Cierra el menú si haces clic fuera de él
+    document.addEventListener("click", function(e){
+    let menu = document.getElementById("menuUsuario");
+    let icon = document.getElementById("userIcon");
+
+    if(!icon.contains(e.target) && !menu.contains(e.target)){
+        menu.style.display = "none";
+    }
+    });
+    </script>
+      </header>
 
 </HTML>
